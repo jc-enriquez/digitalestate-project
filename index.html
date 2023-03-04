@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Estate</title>
+    <link rel="icon" type="png" href="./images/logo.png" />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg py-4">
+        <a class="navbar-brand fw-bold" href="#">DigitalEstate</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold me-4" aria-current="page" href="#"
+                >Buy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold me-4" href="#">Sell</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Rent</a>
+            </li>
+          </ul>
+          <button class="btn btn-secondary-subtle fw-bold border-dark-subtle">
+            Sign in
+          </button>
+        </div>
+      </nav>
+      <!-- End of Navigation Bar -->
+      <!-- Start of Header -->
+      <header>
+        <!-- Start of Row -->
+        <div class="row align-items-center">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="header-text lh-lg">
+              <small class="text-muted fw-bold">Digital estate is</small>
+              <h1 class="fs-1">
+                <span class="d-block fw-bold">The real estate</span>
+                <span class="d-block fw-bold">marketplace</span>
+              </h1>
+              <p class="text-muted">
+                Retro etsy trust fund, salvia gluten-free flexitarian drinking
+                vinegar coloring book hella fixie four loko cardigan.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8" id="hero-image"></div>
+        </div>
+        <!-- End of Row -->
+        <div
+          class="w-75 py-4 bg-white pe-4 d-none d-lg-flex"
+          id="header-controls"
+        >
+          <!-- Search Field -->
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1"
+              ><i class="bi bi-search"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control w-75 me-2"
+              placeholder="Neighborhood, Address, City, School, Zip Code"
+            />
+          </div>
+          <!-- End of Search Field -->
+          <select
+            class="form-select w-25 me-2"
+            aria-label="Default select example"
+          >
+            <option selected>House</option>
+            <option value="1">Condominium</option>
+            <option value="2">Dormitory</option>
+            <option value="3">Commercial Space</option>
+          </select>
+          <select
+            class="form-select w-25 me-2"
+            aria-label="Default select example"
+          >
+            <option selected>For Rent</option>
+            <option value="1">Rent to Own</option>
+            <option value="2">Staycation</option>
+            <option value="3">Others</option>
+          </select>
+          <button class="btn btn-primary w-25">Start search</button>
+        </div>
+      </header>
+      <!-- End of Header -->
+      <!-- Start of Section -->
+      <section>
+        <div class="section-header my-5" data-aos="fade-left">
+          <div class="block mx-auto"></div>
+          <h2 class="text-center fw-bold">Explore our neighborhoods</h2>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-lg-4 mb-2" data-aos="fade-up">
+            <div class="card text-bg-dark border-0">
+              <img
+                src="./images/chicago.jpg"
+                alt="Chicago"
+                class="img-height"
+              />
+              <div class="card-img-overlay p-0 w-50">
+                <div class="bg-white text-dark card-info p-3">
+                  <h5 class="card-title fw-bold">Chicago</h5>
+                  <p class="card-text">
+                    <small class="text-muted">Photo by Pedro Lastra</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-2" data-aos="fade-up">
+            <div class="card text-bg-dark border-0">
+              <img src="./images/boston.jpg" alt="Boston" class="img-height" />
+              <div class="card-img-overlay p-0 w-50">
+                <div class="bg-white text-dark card-info p-3">
+                  <h5 class="card-title fw-bold">Boston</h5>
+                  <p class="card-text">
+                    <small class="text-muted">Photo by Mark Olsen</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-2" data-aos="fade-up">
+            <div class="card text-bg-dark border-0">
+              <img
+                src="./images/san francisco.jpg"
+                alt="San Francisco"
+                class="img-height"
+              />
+              <div class="card-img-overlay p-0 w-50">
+                <div class="bg-white text-dark card-info p-3">
+                  <h5 class="card-title fw-bold">San Francisco</h5>
+                  <p class="card-text">
+                    <small class="text-muted"
+                      >Photo by Maarten van den Heuvel</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-lg-4 mb-2" data-aos="fade-up">
+            <div class="card text-bg-dark border-0">
+              <img
+                src="./images/washington.jpg"
+                alt="Washington, D.C."
+                class="img-height"
+              />
+              <div class="card-img-overlay p-0 w-50" data-aos="fade-up">
+                <div class="bg-white text-dark card-info p-3">
+                  <h5 class="card-title fw-bold">Washington, D.C.</h5>
+                  <p class="card-text">
+                    <small class="text-muted">Photo by Jeremy Yap</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 mb-2" data-aos="fade-up">
+            <div class="card text-bg-dark border-0">
+              <img
+                src="./images/new york.jpg"
+                alt="New York"
+                class="img-height"
+              />
+              <div class="card-img-overlay p-0 w-50">
+                <div class="bg-white text-dark card-info p-3">
+                  <h5 class="card-title fw-bold">New York</h5>
+                  <p class="card-text">
+                    <small class="text-muted">Photo by Patrick Tomasso</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Row -->
+        <!-- Start of Row -->
+        <div class="row">
+          <!-- Start of Column-8 -->
+          <div class="col-lg-8 mb-2" data-aos="fade-up">
+            <div class="card text-bg-dark border-0">
+              <img
+                src="./images/los angeles.jpg"
+                alt="Los Angeles"
+                class="img-height"
+              />
+              <div class="card-img-overlay p-0 w-50">
+                <div class="bg-white text-dark card-info p-3">
+                  <h5 class="card-title fw-bold">Los Angeles</h5>
+                  <p class="card-text">
+                    <small class="text-muted">Photo by Olenka Kotyk</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Column-8 -->
+          <!-- Start of Column-4 -->
+          <div class="col-lg-4 mb-2" data-aos="fade-up">
+            <div class="card text-bg-dark border-0">
+              <img src="./images/miami.jpg" alt="Miami" class="img-height" />
+              <div class="card-img-overlay p-0 w-50">
+                <div class="bg-white text-dark card-info p-3">
+                  <h5 class="card-title fw-bold">Miami</h5>
+                  <p class="card-text">
+                    <small class="text-muted">Photo by Antonio Cuellar</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Column-4 -->
+        </div>
+        <!-- End of Row -->
+      </section>
+      <!-- End of Section -->
+      <section>
+        <div class="section-header my-5" data-aos="fade-right">
+          <div class="block mb-2"></div>
+          <h2 class="fw-bold">Discover RealEstate trends in market</h2>
+          <p class="text-muted">
+            Enamel pin mixtape chambray, praxis vibecession plaid seitan
+            sriracha.
+          </p>
+        </div>
+        <!-- Start of Row -->
+        <div class="row mb-5" data-aos="fade-left">
+          <div class="col-lg-3 mb-2">
+            <span class="d-block fw-light fs-1">01.</span>
+            <p class="fw-bold">
+              Art party readymade brunch raclette tote bag gentrify roof party
+              PBR&B godard shoreditch.
+            </p>
+            <small class="text-muted"
+              >Vegan venmo kombucha cliche +1 af street art quinoa austin ascot
+              pabst poke fashion axe.</small
+            >
+          </div>
+          <div class="col-lg-3 mb-2">
+            <span class="d-block fw-light fs-1">02.</span>
+            <p class="fw-bold">
+              Letterpress pour-over mixtape vibecession, edison bulb crucifix 3
+              wolf moon gentrify lo-fi migas.
+            </p>
+            <small class="text-muted"
+              >Taxidermy mukbang subway tile, cray scenester godard offal tofu
+              ennui gochujang stumptown.</small
+            >
+          </div>
+          <div class="col-lg-3 mb-2">
+            <span class="d-block fw-light fs-1">03.</span>
+            <p class="fw-bold">
+              Heirloom adaptogen gluten-free aesthetic typewriter paleo trust
+              fund retro salvia hell of DSA.
+            </p>
+            <small class="text-muted"
+              >Jean shorts tousled pitchfork taiyaki small batch, slow-carb
+              before they sold out.</small
+            >
+          </div>
+          <div class="col-lg-3 mb-2">
+            <span class="d-block fw-light fs-1">04.</span>
+            <p class="fw-bold">
+              Try-hard quinoa ennui tonx, semiotics post-ironic humblebrag ugh
+              fashion axe gatekeep.
+            </p>
+            <small class="text-muted"
+              >Fixie direct trade blog tacos truffaut poke dreamcatcher four
+              loko farm-to-table.</small
+            >
+          </div>
+        </div>
+        <!-- End of Row -->
+        <!-- Start of Testimonials -->
+        <div class="swiper" data-aos="zoom-in-up">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide p-5" id="slide-1">
+              <div class="text-center">
+                <p class="text-light w-75 mx-auto">
+                  Raclette af pabst etsy, pitchfork mukbang bitters retro YOLO
+                  snackwave cliche man bun irony XOXO. Hot chicken raw denim
+                  keytar, vegan tofu live-edge Brooklyn chartreuse street art.
+                  Tonx four dollar toast schlitz coloring book fingerstache,
+                  direct trade hoodie chartreuse. Sriracha offal yr
+                  intelligentsia paleo edison bulb crucifix craft beer before
+                  they sold out pork belly sartorial synth succulents retro
+                  ramps.
+                </p>
+                <img
+                  src="images/avatar-1.jpg"
+                  alt="Woman Smiling"
+                  srcset=""
+                  class="rounded-pill avatar-img"
+                />
+                <small class="d-block text-light">Rachel Smith</small>
+              </div>
+            </div>
+
+            <div class="swiper-slide p-5" id="slide-2">
+              <div class="text-center">
+                <p class="text-light w-75 mx-auto">
+                  Raclette af pabst etsy, pitchfork mukbang bitters retro YOLO
+                  snackwave cliche man bun irony XOXO. Hot chicken raw denim
+                  keytar, vegan tofu live-edge Brooklyn chartreuse street art.
+                  Tonx four dollar toast schlitz coloring book fingerstache,
+                  direct trade hoodie chartreuse. Sriracha offal yr
+                  intelligentsia paleo edison bulb crucifix craft beer before
+                  they sold out pork belly sartorial synth succulents retro
+                  ramps.
+                </p>
+                <img
+                  src="images/avatar-2.jpg"
+                  alt="Woman Smiling"
+                  srcset=""
+                  class="rounded-pill avatar-img"
+                />
+                <small class="d-block text-light">Paulene Adams</small>
+              </div>
+            </div>
+
+            <div class="swiper-slide p-5" id="slide-3">
+              <div class="text-center">
+                <p class="text-light w-75 mx-auto">
+                  Raclette af pabst etsy, pitchfork mukbang bitters retro YOLO
+                  snackwave cliche man bun irony XOXO. Hot chicken raw denim
+                  keytar, vegan tofu live-edge Brooklyn chartreuse street art.
+                  Tonx four dollar toast schlitz coloring book fingerstache,
+                  direct trade hoodie chartreuse. Sriracha offal yr
+                  intelligentsia paleo edison bulb crucifix craft beer before
+                  they sold out pork belly sartorial synth succulents retro
+                  ramps.
+                </p>
+                <img
+                  src="images/avatar-3.jpg"
+                  alt="Woman Smiling"
+                  srcset=""
+                  class="rounded-pill avatar-img"
+                />
+                <small class="d-block text-light">Steve Paz</small>
+              </div>
+            </div>
+
+            <div class="swiper-slide p-5" id="slide-4">
+              <div class="text-center">
+                <p class="text-light w-75 mx-auto">
+                  Raclette af pabst etsy, pitchfork mukbang bitters retro YOLO
+                  snackwave cliche man bun irony XOXO. Hot chicken raw denim
+                  keytar, vegan tofu live-edge Brooklyn chartreuse street art.
+                  Tonx four dollar toast schlitz coloring book fingerstache,
+                  direct trade hoodie chartreuse. Sriracha offal yr
+                  intelligentsia paleo edison bulb crucifix craft beer before
+                  they sold out pork belly sartorial synth succulents retro
+                  ramps.
+                </p>
+                <img
+                  src="images/avatar-4.jpg"
+                  alt="Woman Smiling"
+                  srcset=""
+                  class="rounded-pill avatar-img"
+                />
+                <small class="d-block text-light">Irish Jones</small>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- End of Testimonials -->
+        <div
+          class="d-none d-lg-flex align-items-center justify-content-between py-5"
+          data-aos="zoom-in"
+        >
+          <img src="images/brand-1.png" alt="" srcset="" class="brands" />
+          <img src="images/brand-2.png" alt="" srcset="" class="brands" />
+          <img src="images/brand-3.png" alt="" srcset="" class="brands" />
+          <img src="images/brand-4.png" alt="" srcset="" class="brands" />
+          <img src="images/brand-5.png" alt="" srcset="" class="brands" />
+        </div>
+      </section>
+
+      <!-- Start of Footer -->
+      <footer data-aos="fade-down">
+        <div class="row justify-content-center border-top border-bottom py-4">
+          <div class="col-lg-4">
+            <a
+              class="fw-bold text-dark text-decoration-none footer-brand"
+              href="#"
+              >DigitalEstate</a
+            >
+            <p class="text-muted">
+              Leggings mixtape skateboard, mukbang semiotics selvage iceland
+              pinterest fanny pack.
+            </p>
+            <div class="d-flex">
+              <i class="bi bi-facebook me-2"></i>
+              <i class="bi bi-twitter me-2"></i>
+              <i class="bi bi-instagram me-2"></i>
+              <i class="bi bi-envelope"></i>
+            </div>
+          </div>
+          <div class="col-lg-2 d-none d-lg-block">
+            <ul class="footer-link">
+              <li class="list-group-item fw-bold">DigitalEstate</li>
+              <li class="list-group-item footer-block"></li>
+              <li class="list-group-item mb-2 text-muted">About</li>
+              <li class="list-group-item text-muted">Contact us</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 d-none d-lg-block">
+            <ul class="footer-link">
+              <li class="list-group-item fw-bold">Buy</li>
+              <li class="list-group-item footer-block"></li>
+              <li class="list-group-item mb-2 text-muted">Apartments</li>
+              <li class="list-group-item mb-2 text-muted">Houses</li>
+              <li class="list-group-item mb-2 text-muted">Offices</li>
+              <li class="list-group-item mb-2 text-muted">Land</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 d-none d-lg-block">
+            <ul class="footer-link">
+              <li class="list-group-item fw-bold">Rent</li>
+              <li class="list-group-item footer-block"></li>
+              <li class="list-group-item mb-2 text-muted">Apartments</li>
+              <li class="list-group-item mb-2 text-muted">Houses</li>
+              <li class="list-group-item mb-2 text-muted">Offices</li>
+              <li class="list-group-item mb-2 text-muted">Land</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 d-none d-lg-block">
+            <ul class="footer-link">
+              <li class="list-group-item fw-bold">Customers</li>
+              <li class="list-group-item footer-block"></li>
+              <li class="list-group-item mb-2 text-muted">For home sellers</li>
+              <li class="list-group-item text-muted">For real estate agents</li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between py-4 text-muted">
+          <small>&copy;2023 Digital Estate</small>
+          <small class="text-decoration-underline">Privacy Policy</small>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+    </main>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
